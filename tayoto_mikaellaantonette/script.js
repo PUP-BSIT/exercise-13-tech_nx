@@ -1,9 +1,9 @@
 const form = document.querySelector("form");
-const nameInput = document.querySelector("name");
-const commentInput = document.querySelector("gcomment");
-const commentList = document.querySelector("comment-list");
-const sortAscButton = document.querySelector("sort-asc");
-const sortDescButton = document.querySelector("sort-desc");
+const nameInput = document.querySelector("#name");
+const commentInput = document.querySelector("#gcomment");
+const commentList = document.querySelector("#comment_list");
+const sortAscButton = document.querySelector("#sort_asc");
+const sortDescButton = document.querySelector("#sort_desc");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -17,7 +17,7 @@ form.addEventListener("submit", function (event) {
   const newComment = document.createElement("li");
   newComment.innerHTML = `<strong>${name}</strong> - ${comment} - 
   <time datetime="${date}">${date.toLocaleString()}</time>`;
-  
+
   const listItem = document.createElement("li");
   listItem.appendChild(newComment);
   commentList.appendChild(listItem);

@@ -56,22 +56,12 @@
           <hr />
           <div class="gallery">
             <h2>Gallery</h2>
-            <img
-              src="https://i2.wp.com/zet.gallery/blog/wp-content/uploads/2016/02/Vicent-Van-Gogh-Starry-Night-Famous-Oil-Paintings-www.shairart.com_.jpg?fit=1280%2C1014"
-            />
-            <img
-              src="https://singulart-website-prod.s3.eu-central-1.amazonaws.com/artworks/v2/cropped/17005/main/zoom/1107483_7ba096d0ca55638dc7b87902b64d37e6.jpeg"
-            />
+            <img src="https://i2.wp.com/zet.gallery/blog/wp-content/uploads/2016/02/Vicent-Van-Gogh-Starry-Night-Famous-Oil-Paintings-www.shairart.com_.jpg?fit=1280%2C1014"/>
+            <img src="https://singulart-website-prod.s3.eu-central-1.amazonaws.com/artworks/v2/cropped/17005/main/zoom/1107483_7ba096d0ca55638dc7b87902b64d37e6.jpeg"/>
             <img src="https://static.toiimg.com/photo/108176903.cms" />
-            <img
-              src="https://5.imimg.com/data5/SELLER/Default/2022/6/UQ/ZR/LH/105150937/af1-6-a.jpg"
-            />
-            <img
-              src="https://cdn.shopify.com/s/files/1/0047/4231/6066/t/48/assets/the-kiss-gustav-klimt-1648576625955_800x.jpg"
-            />
-            <img
-              src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i6b743a5bd2529b6a/version/1500387064/unmissable-paintings-in-europe-la-clairvoyance-by-magritte.jpg"
-            />
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/UQ/ZR/LH/105150937/af1-6-a.jpg"/>
+            <img src="https://cdn.shopify.com/s/files/1/0047/4231/6066/t/48/assets/the-kiss-gustav-klimt-1648576625955_800x.jpg"/>
+            <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i6b743a5bd2529b6a/version/1500387064/unmissable-paintings-in-europe-la-clairvoyance-by-magritte.jpg"/>
           </div>
           <hr />
           <div class="goals">
@@ -86,28 +76,28 @@
           <form class="comment">
             <div>
               <h2>Comments</h2>
-              <label for="name">Name: </label>
-              <input type="text" id="name" oninput="name()" />
-            </div>
-            <div>
-              <p>Comment:</p>
-              <textarea
-                name="gcomment"
-                id="gcomment"
-                oninput="comment()"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <div>
-              <button
-                class="submit-goal"
-                type="button"
-                id="comment_button"
-                disabled
-              >
-                Submit
-              </button>
+              <section class="comment">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required />
+                </div>
+                <div>
+                  <label for="gcomment">Comment:</label>
+                  <textarea id="gcomment"></textarea>
+                </div>
+                <div>
+                  <button type="submit" 
+                  class="submit-goal" 
+                  id="comment_button">
+                    Submit
+                  </button>
+                </div>
+                <div>
+                  <button id="sort_asc">Sort by Date (ASC)</button>
+                  <button id="sort_desc">Sort by Date (DESC)</button>
+                </div>
+                <ul id="comment_list"></ul>
+              </section>
             </div>
           </form>
           <script src="./script.js"></script>

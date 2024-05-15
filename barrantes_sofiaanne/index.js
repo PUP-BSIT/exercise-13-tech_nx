@@ -10,4 +10,4 @@ function comment_btn() {
     }
 }
 
-document.getElementById("commentForm").addEventListener("input", comment_btn);
+document.getElementById("comment-form").addEventListener("input", comment_btn);

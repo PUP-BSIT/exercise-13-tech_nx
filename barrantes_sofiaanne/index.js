@@ -51,14 +51,14 @@ function comment_btn() {
   let comment = document.getElementById("comment");
   let button = document.getElementById("com-b");
 
-  if (name.value.length&& comment.value.length) {
+  if (name.value.length && comment.value.length) {
     button.disabled = false;
   } else {
     button.disabled = true;
   }
 }
 
-document.getElementById("commentForm").addEventListener("input", comment_btn);
+document.querySelector("#comment-form").addEventListener("input", comment_btn);
 
 document.querySelector("#asc_btn").addEventListener("click", function () {
   sortComments("asc");

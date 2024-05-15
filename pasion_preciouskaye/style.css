@@ -33,7 +33,7 @@ h2 {
 .hobbies,
 .comment,
 .goals,
-.yourcomment,
+.your-comment,
 .mcomment,
 .thoughts {
   border: 10px solid rgba(51, 113, 227, 0.686);
@@ -43,7 +43,7 @@ h2 {
   padding: 7px;
 }
 
-.yourcomment {
+.your-comment {
   background-color: rgb(124, 201, 231);
   margin: auto;
   padding: 30px;
@@ -127,7 +127,6 @@ img {
   padding: 10px;
   text-align: center;
 }
-
 
 @media (min-width: 426px) {
   .container > form {

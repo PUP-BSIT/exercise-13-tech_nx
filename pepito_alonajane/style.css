@@ -45,21 +45,21 @@
     margin-left:40px; 
 }
 
-#comment-form {
+#comment_form {
     margin-top: 20px;
 }
 
-#comment-form input[type="text"],
-#comment-form textarea {
+#comment_form input[type="text"],
+#comment_form textarea {
     width: 50%;
     margin-bottom: 10px;
 }
 
-#comment-form button {
+#comment_form button {
     width: 50%;
 }
 
-#comment-form button:disabled {
+#comment_form button:disabled {
     background-color: lightgray;
     cursor: not-allowed;
 }

@@ -6,7 +6,7 @@ document.getElementById("comment").addEventListener
 function toggleCommentButton() {
   let nameInput = document.getElementById("name").value.trim();
   let commentInput = document.getElementById("comment").value.trim();
-  let commentBtn = document.getElementById("comment-btn");
+  let commentBtn = document.getElementById("comment_btn");
 
   if (nameInput && commentInput) {
     commentBtn.removeAttribute("disabled");

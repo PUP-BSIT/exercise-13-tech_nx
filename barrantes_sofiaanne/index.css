@@ -143,18 +143,6 @@ a:hover {
     margin-top: 20px; 
 }
 
-@media (min-width: 427px) {
-    .contact>form {
-        display: grid;
-        grid-template-areas: 
-            "email Name"
-            "subject age"
-            "copy copy"
-            "message message"
-            "submit submit";
-    }
-}
-
 @media (max-width: 426px) {
     .contact > form {
         display: grid;
@@ -173,6 +161,18 @@ a:hover {
     }
     .section-container {
         width: auto;
+    }
+}
+
+@media (min-width: 427px) {
+    .contact>form {
+        display: grid;
+        grid-template-areas: 
+            "email Name"
+            "subject age"
+            "copy copy"
+            "message message"
+            "submit submit";
     }
 }
 

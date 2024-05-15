@@ -34,7 +34,7 @@ h2 {
 .comment,
 .goals,
 .your-comment,
-.mcomment,
+.my-comment,
 .thoughts {
   border: 10px solid rgba(51, 113, 227, 0.686);
   background-color: rgba(0, 174, 255, 0.586);
@@ -61,7 +61,7 @@ h2 {
   padding: 30px;
 }
 
-.mcomment{
+.my-comment{
   background-color: rgba(127, 236, 255, 0.802);
   margin: auto;
   padding: 30px;

@@ -36,11 +36,11 @@
         <h2 class="files">My Works</h2>
         <hr />
         <ol class="files-li">
-          <li><a href="./test.html"> Test </a></li>
-          <li><a href="./test1.html"> Test 1 </a></li>
-          <li><a href="./test2.html"> Test 2 </a></li>
-          <li><a href="./test3.html"> Test 3 </a></li>
-          <li><a href="./test4.html"> Test 4 </a></li>
+          <li><a href="./test.html">Test</a></li>
+          <li><a href="./test1.html">Test 1</a></li>
+          <li><a href="./test2.html">Test 2</a></li>
+          <li><a href="./test3.html">Test 3</a></li>
+          <li><a href="./test4.html">Test 4</a></li>
         </ol>
       </div>
     </div>
@@ -59,11 +59,11 @@
         </li>
         <li>
           Her attention to detail and dedication to excellence were evident in
-          every aspect of her website.- Alona
+          every aspect of her website. - Alona
         </li>
         <li>
           Creativity and dedication shine through in every project. A very good
-          work for you! -Precious
+          work for you! - Precious
         </li>
       </ul>
     </div>
@@ -85,12 +85,11 @@
       <h2 class="remarks">Comment Section</h2>
       <hr />
       <div class="content">
-        <ul class="com-li">
-          <li>Goodluck on the journey to achieve this - Sofia</li>
-          <li>That's inspiring! :D - Mikaella</li>
-          <li>Goodluck to your Goals -Precious</li>
-          <li>I am rooting for you! - Alona</li>
-        </ul>
+        <div>
+          <button onclick="sortComments('asc')">Ascending</button>
+          <button onclick="sortComments('desc')">Descending</button>
+        </div>
+        <ul class="com-li" id="commentList"></ul>
       </div>
       <hr />
       <h2 class="comment-form">Comment Form</h2>
@@ -114,12 +113,11 @@
           <button
             type="button"
             id="save_button"
-            onclick="verification()"
+            onclick="writeNewComment()"
             disabled>
-            Button
+            Submit
           </button>
         </div>
-        <script src="script.js"></script>
       </form>
     </div>
     <hr />
@@ -214,8 +212,7 @@
           </div>
           <div class="message">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="2" cols="20">
-            </textarea>
+            <textarea id="message" name="message" rows="2" cols="20"></textarea>
           </div>
           <div class="submit">
             <input type="submit" value="Submit" />
@@ -223,5 +220,6 @@
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

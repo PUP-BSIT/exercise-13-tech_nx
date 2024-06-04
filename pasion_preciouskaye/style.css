@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   margin: auto;
 }
-
+  
 .name {
   text-align: center;
   background-color: rgb(124, 148, 222);
@@ -139,4 +139,4 @@ img {
       "submit submit";
     grid-gap: 10px;
   }
-}
+}                      4
